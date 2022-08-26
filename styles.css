@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=PT+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', 'sans-serif';
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #da59e0;
+}
+.wrapper{
+    width: 600px;
+    background: #fffbff;
+    border-radius: 4ch;
+    padding: 30px 30px 25px ;
+}
+.wrapper header{
+    font-size: xx-large;
+    font-weight: 600;
+    text-align: center;
+}
+.wrapper .content{
+    margin: 30px 0;
+
+}
+.content .quoteArea{
+    display: flex;
+    justify-content: center;
+}
+.quoteArea i{
+    font-size: 15px;
+}
+.quoteArea i:first-child{
+    margin: 3px 10px 0 0;
+}
+.quoteArea i:last-child{
+    margin: 0 0 3px 10px;
+    display: flex;
+    align-items: flex-end;
+}
+.quoteArea .quote{
+    font-size: 20px;
+    text-align: center;
+    
+}
+.content .author{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    font-style: italic;
+    justify-content: flex-end;
+}
+.author span:first-child{
+    font-family: monospace;
+    margin: -7px 5px 0 0;
+}
+.wrapper .content .buttons{
+    align-items: center;
+    margin-top: 15px;
+    border-top: 1px solid #ccc;
+}
+.buttons .features{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.features ul{
+    display: flex;
+}
+.features ul li{
+    cursor: pointer;
+    list-style: none;
+    margin:0 10px;
+    height: 32px;
+    width: 32px;
+    color: #da59e0;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #da59e0;
+    transition: all 0.5s;
+    display: flex;
+}
+.features ul li:hover{
+    color: #ffffff;
+    background: #da59e0;
+}
+.features button{
+    border: none;
+    outline: none;
+    padding: 13px 12px;
+    border-radius: 30px;
+    background: #da59e0;
+    color: #ffffff;
+    cursor: pointer;
+    font-style: 16px;
+}
+button.dwell{
+    opacity: 0.7;
+    pointer-events: none;
+}
