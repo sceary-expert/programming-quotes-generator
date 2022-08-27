@@ -10,9 +10,9 @@ function generateRandomQuote(){
     quoteButton.classList.add("dwell");
     quoteButton.innerText ="Loading quote..";
     console.log("User Just Clicked The Button");
-    fetch("http://quotes.stormconsultancy.co.uk/random.json").then(newQuote => newQuote.json()).then(generatedNewQuote =>{
+    fetch("http://api.quotable.io/random").then(newQuote => newQuote.json()).then(generatedNewQuote =>{
         console.log(generatedNewQuote);
-        quoteText.innerText = generatedNewQuote.quote;
+        quoteText.innerText = generatedNewQuote.content;
         authorName.innerText = generatedNewQuote.author;
         quoteButton.innerText ="New Quote";
         quoteButton.classList.remove("dwell");    
