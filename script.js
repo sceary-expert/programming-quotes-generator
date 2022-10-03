@@ -46,6 +46,10 @@ quoteButton.addEventListener("click", generateRandomQuote);
 const setBackground = () => {
     const randomColor = Math.floor(Math.random()*16777215).toString(16);
     document.body.style.backgroundColor = "#" + randomColor;
+    quoteButton.style.backgroundColor = "#" + randomColor;
+    linkedInButton.style.backgroundColor = "#" + randomColor;
+    soundButton.style.backgroundColor = "#" + randomColor;
+    copyButton.style.backgroundColor = "#" + randomColor;
     color.innerHTML = "#" + randomColor;
   }
   
