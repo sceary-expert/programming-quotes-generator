@@ -11,12 +11,26 @@ body{
     justify-content: center;
     min-height: 100vh;
     background: #da59e0;
+   
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  -webkit-filter: drop-shadow(0 1em 1em rgba(226, 91, 91, 0.1));
+  filter: drop-shadow(0 1em 1em rgba(226, 91, 91, 0.1));
 }
 .wrapper{
     width: 600px;
-    background: #fffbff;
+    
     border-radius: 4ch;
     padding: 30px 30px 25px ;
+    background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  -webkit-filter: drop-shadow(0 1em 1em rgba(226, 91, 91, 0.1));
+  filter: drop-shadow(0 1em 1em rgba(226, 91, 91, 0.1));
 }
 .wrapper header{
     font-size: xx-large;
