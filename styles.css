@@ -119,3 +119,78 @@ button.dwell{
     opacity: 0.7;
     pointer-events: none;
 }
+
+@media screen and (max-width : 600px)
+{
+    .wrapper{
+        width: 350px;
+        
+        border-radius: 4ch;
+        padding: 30px 30px 25px ;
+        background: rgba( 255, 255, 255, 0.25 );
+      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+      backdrop-filter: blur( 4px );
+      -webkit-backdrop-filter: blur( 4px );
+      border: 1px solid rgba( 255, 255, 255, 0.18 );
+      -webkit-filter: drop-shadow(0 1em 1em rgba(226, 91, 91, 0.1));
+      filter: drop-shadow(0 1em 1em rgba(226, 91, 91, 0.1));
+    }
+    .buttons .features{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+    }
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background: #4e4487;
+       
+      
+      backdrop-filter: blur( 4px );
+      -webkit-backdrop-filter: blur( 4px );
+      border: 1px solid rgba( 255, 255, 255, 0.18 );
+      
+      
+    }
+    .wrapper .content{
+        margin: 15px 15px;
+    
+    }
+    .features ul li{
+        cursor: pointer;
+        list-style: none;
+        margin:0 10px;
+        height: 32px;
+        width: 32px;
+        color: #34306a;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #5a4ca7;
+        transition: all 0.5s;
+        display: flex;
+    }
+    .features ul li:hover{
+        color: #ffffff;
+        background: #54438b;
+    }
+    .features button{
+        border: none;
+        outline: none;
+        padding: 13px 12px;
+        border-radius: 30px;
+        background: #3f2e76;
+        color: #ffffff;
+        cursor: pointer;
+        font-style: 16px;
+    }
+    button.dwell{
+        opacity: 0.7;
+        pointer-events: none;
+    }
+    
+
+}
