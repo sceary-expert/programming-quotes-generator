@@ -15,14 +15,14 @@ function generateRandomQuote(){
         quoteText.innerText = generatedNewQuote.content;
         authorName.innerText = generatedNewQuote.author;
         quoteButton.innerText ="New Quote";
-        quoteButton.classList.remove("dwell");    
+        quoteButton.classList.remove("dwell");  
     })
+    setBackground();  
 };
 function generateSound(){
 
     let utterance = new SpeechSynthesisUtterance(`${quoteText.innerText} by ${authorName.innerText}`);
     speechSynthesis.speak(utterance);
-  
     console.log("Generating Sound");
 };
 function copyQuoteOnClipboard(){
@@ -39,3 +39,13 @@ copyButton.addEventListener("click", copyQuoteOnClipboard);
 linkedInButton.addEventListener("click", shareViaLinkedIn);
 
 quoteButton.addEventListener("click", generateRandomQuote);
+
+
+// random color generator code
+
+const setBackground = () => {
+    const randomColor = Math.floor(Math.random()*16777215).toString(16);
+    document.body.style.backgroundColor = "#" + randomColor;
+    color.innerHTML = "#" + randomColor;
+  }
+  
