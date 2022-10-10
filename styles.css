@@ -7,6 +7,7 @@
 }
 body{
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
@@ -19,6 +20,7 @@ body{
   -webkit-filter: drop-shadow(0 1em 1em rgba(226, 91, 91, 0.1));
   filter: drop-shadow(0 1em 1em rgba(226, 91, 91, 0.1));
 }
+
 .wrapper{
     width: 600px;
     
@@ -192,5 +194,26 @@ button.dwell{
         pointer-events: none;
     }
     
+    
 
 }
+
+* {
+    box-sizing: border-box
+  }
+  html, body {
+    height: 80%
+  }
+  body {
+      font: 18px "Open Sans", sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      margin: auto;
+    display: flex;
+    flex-flow:column nowrap;
+  
+  }
+  .footer-bottom-rights {
+    display: block;
+    margin-top:50px;
+  }
